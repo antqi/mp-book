@@ -1,0 +1,6 @@
+<!--components/top/top.wxml-->
+<view>
+  <view>
+    {{params.image}}
+  </view>
+</view>

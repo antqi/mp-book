@@ -1,0 +1,5 @@
+<!--pages/pop/pop.wxml-->
+<view class="pop-container">
+    <top params="{{params}}"></top>
+    <desc params="{{params}}"></desc>
+</view>

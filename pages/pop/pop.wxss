@@ -1,0 +1,5 @@
+/* pages/pop/pop.wxss */
+.pop-container{
+  width:100%;
+  box-sizing: border-box;
+}

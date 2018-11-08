@@ -1,0 +1,7 @@
+{
+  "usingComponents":{
+    "top":"/components/top/top",
+    "desc":"/components/desc/desc"
+  }
+}
+
