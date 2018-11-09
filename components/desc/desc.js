@@ -8,14 +8,14 @@ Component({
       type:Object,
       default:null,
       observer(to, form, changedPath){
-        
-        if(to.type){
+        if(to.hasOwnProperty('type')){
           this.setData({
             typeName: {
               'type_100': '电影',
               'type_200': '音乐',
               'type_300': '诗句'
-            }[to.type]})
+            }[`type_${to.type}`]
+          })
         }
       }
     }

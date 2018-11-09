@@ -1,6 +1,17 @@
 <!--components/top/top.wxml-->
-<view>
+<view class='top-container'>
+  <view class="top-date">
+    <text class='date-bar'>
+      <text class='date-index'>No.</text>
+      <text class='date-num'>{{date.d}}</text>
+    </text>
+    <text>
+      <text class="date-m">{{date.m}}</text>
+      <text class="date-y">{{date.y}}</text>
+    </text>
+  </view>
   <view>
-    {{params.image}}
+    <like></like>
+    <share></share>
   </view>
 </view>

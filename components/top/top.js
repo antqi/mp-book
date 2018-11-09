@@ -1,4 +1,6 @@
 // components/top/top.js
+import { ZHMonth } from '../../utils/util'
+
 Component({
   /**
    * 组件的属性列表
@@ -6,7 +8,20 @@ Component({
   properties: {
     params:{
       type:Object,
-      value:null
+      value:null,
+      observer(to,form){
+        
+        if (to.hasOwnProperty('pubdate')){
+
+          this.setData({
+            date:{
+              y:to.pubdate.split('-')[0],
+              m: ZHMonth(to.pubdate.split('-')[1]),
+              d:to.pubdate.split('-')[2]
+            }
+          })
+        }
+      }
     }
   },
 
@@ -14,7 +29,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    params:null
+    date:null
   },
 
   /**

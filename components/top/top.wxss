@@ -1,1 +1,17 @@
 /* components/top/top.wxss */
+.top-container{
+  display: flex;
+  justify-content: space-between;
+  height: 100rpx;
+  align-items: center;
+  box-sizing: border-box;
+  padding:0 30rpx;
+}
+
+.top-container .top-date{
+  display: flex;
+}
+
+.top-container .top-date .date-bar .date-index{
+  font-size:30rpx;  
+}

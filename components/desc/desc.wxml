@@ -1,6 +1,6 @@
 <view class="desc-container">
       <image class='image' src="{{params.image}}" mode="widthFix"></image>
-      <text>{{params.typeName}}</text>
+      <text>{{typeName}}</text>
       <text>{{params.content}}</text>
 </view>
  

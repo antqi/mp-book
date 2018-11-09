@@ -1,2 +1,2 @@
 <!--components/like/like.wxml-->
-<text>components/like/like.wxml</text>
+<text class="like-container">xin</text>
