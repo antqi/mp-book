@@ -13,5 +13,32 @@
 }
 
 .top-container .top-date .date-bar .date-index{
-  font-size:30rpx;  
+  font-size:32rpx;  
+}
+.top-container .top-date .date-bar .date-num{
+  font-size:58rpx;  
+}
+
+.top-container .top-date .col-line{
+  background-color: #000;
+  width:1rpx;
+ 
+  margin:15rpx 15rpx;
+  line-height: 100rpx;
+}
+
+.top-container .top-date .date-date{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.top-container .top-date .date-m{
+  font-size:24rpx;  
+}
+.top-container .top-date .date-y{
+  font-size:20rpx;  
+}
+
+.top-container .like{
+  margin-right: 35rpx;
 }

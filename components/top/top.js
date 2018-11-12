@@ -12,12 +12,16 @@ Component({
       observer(to,form){
         
         if (to.hasOwnProperty('pubdate')){
-
+          console.log(to)
           this.setData({
             date:{
               y:to.pubdate.split('-')[0],
               m: ZHMonth(to.pubdate.split('-')[1]),
               d:to.pubdate.split('-')[2]
+            },
+            like:{
+              like_status: to.like_status,
+              fav_num: to.fav_nums
             }
           })
         }
@@ -29,7 +33,8 @@ Component({
    * 组件的初始数据
    */
   data: {
-    date:null
+    date:null,
+    like:null
   },
 
   /**

@@ -1,17 +1,18 @@
 <!--components/top/top.wxml-->
 <view class='top-container'>
   <view class="top-date">
-    <text class='date-bar'>
+    <view class='date-bar'>
       <text class='date-index'>No.</text>
       <text class='date-num'>{{date.d}}</text>
-    </text>
-    <text>
+    </view>
+    <view class="col-line"></view>
+    <view class="date-date">
       <text class="date-m">{{date.m}}</text>
       <text class="date-y">{{date.y}}</text>
-    </text>
+    </view>
   </view>
-  <view>
-    <like></like>
-    <share></share>
+  <view >
+    <like class="like" wx:if="{{like}}" params="{{params}}"></like>
+    <share class="share"></share>
   </view>
 </view>
