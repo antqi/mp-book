@@ -1,6 +1,15 @@
 <view class="desc-container">
-      <image class='image' src="{{params.image}}" mode="widthFix"></image>
-      <text>{{typeName}}</text>
-      <text>{{params.content}}</text>
+  <image
+    class="image"
+    src="{{currentData.image}}"
+    mode="{{currentData.type===200?'aspectFit':'aspectFill'}}"
+  ></image>
+
+  <view class="text">
+    <view class="txt-type">
+      <text class="one"> {{ typeName[0] }}</text>
+      <text> {{ typeName[1] }}</text> <text class="done"> 。</text>
+    </view>
+    <text class="txt-desc">{{ currentData.content }}</text>
+  </view>
 </view>
- 

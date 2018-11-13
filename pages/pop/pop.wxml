@@ -1,5 +1,21 @@
-<!--pages/pop/pop.wxml-->
+<!-- pages/pop/pop.wxml -->
 <view class="pop-container">
-    <top params="{{params}}"></top>
-    <desc params="{{params}}"></desc>
+  <top params="{{currentData}}"></top> <desc params="{{currentData}}"></desc>
+  <view class="page-bar">
+    <image
+      bindtap="onPrev"
+      data-index="{{currentData.index}}"
+      src="/images/prev.png"
+      mode="widthFix"
+    >
+    </image>
+    <text class="title"> {{ currentData.title }} </text>
+    <image
+      bindtap="onNext"
+      data-index="{{currentData.index}}"
+      src="/images/next.png"
+      mode="widthFix"
+    >
+    </image>
+  </view>
 </view>

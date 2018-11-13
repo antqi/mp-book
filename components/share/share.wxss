@@ -1,1 +1,6 @@
 /* components/share/share.wxss */
+.share-image{
+  width:28rpx;
+  height: 28rpx;
+  margin-left: 20rpx;
+}

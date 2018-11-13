@@ -1,5 +1,28 @@
 /* pages/pop/pop.wxss */
-.pop-container{
-  width:100%;
+.pop-container {
+  width: 100%;
   box-sizing: border-box;
+}
+
+.pop-container .page-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 30rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 80rpx;
+  width: 78%;
+  background-color: #f7f7f7;
+  border-radius: 6rpx;
+  padding: 0 18rpx;
+}
+
+.pop-container .page-bar image {
+  width: 23rpx;
+  height: 34rpx;
+}
+.pop-container .page-bar .title {
+  font-size: 24rpx;
 }

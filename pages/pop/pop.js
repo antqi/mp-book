@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    params: { a: 2 }
+    currentData: null
   },
 
   /**
@@ -18,71 +18,77 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
-
-  },
+  onReady: function () {},
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
-
-  },
+  onShow: function () {},
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
-
-  },
+  onHide: function () {},
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
-
-  },
+  onUnload: function () {},
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
-
-  },
+  onPullDownRefresh: function () {},
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
-
-  },
+  onReachBottom: function () {},
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
-
-  },
-  getData(){
-    const me=this
-    // me.setData({ params: {
-    //     content: '人生不能像做菜，把所有的料准备好才下锅',
-    //     fav_nums: 23,
-    //     id: 1,
-    //     image: 'http://bl.7yue.pro/images/movie.8.png',
-    //     index: 8,
-    //     like_status: 0,
-    //     pubdate: '2018-06-22',
-    //     title: '李安《饮食男女 》',
-    //     type: 100
-    //   } 
-    // })
+  onShareAppMessage: function () {},
+  getData() {
+    const me = this
 
     wx.request({
       url: 'http://bl.7yue.pro/v1/classic/latest?appkey=S1Qj2GpHSvgWrrn5',
-      success(res){
-        if(res.statusCode===200){
-          me.setData({ params: res.data})
+      success(res) {
+        if (res.statusCode === 200) {
+          me.setData({ currentData: res.data})
+        }
+      }
+    })
+  },
+  onPrev(event) {
+    const index = event.currentTarget.dataset.index
+    this._toggle(`classic/${index}/previous`)
+  },
+  onNext(event) {
+    const index = event.currentTarget.dataset.index
+    this._toggle(`classic/${index}/next`)
+  },
+  _toggle(url) {
+    const me = this
+
+    wx.request({
+      url: `http://bl.7yue.pro/v1/${url}?appkey=S1Qj2GpHSvgWrrn5`,
+      header: { 'content-type': 'application/json' },
+      method: 'GET',
+      dataType: 'json',
+      responseType: 'text',
+      success: (res) => {
+        if (res.statusCode === 200) {
+          me.setData({
+            currentData: res.data
+          })
+        }else {
+          wx.showToast({
+            title: '没有了',
+            icon: 'info',
+            duration: 2000
+          })
         }
       }
     })
