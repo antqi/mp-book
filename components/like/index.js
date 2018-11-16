@@ -1,4 +1,4 @@
-// components/share/share.js
+// components/like/index.js
 Component({
   /**
    * 组件的属性列表

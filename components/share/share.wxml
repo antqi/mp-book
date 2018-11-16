@@ -1,2 +1,0 @@
-<!--components/share/share.wxml-->
-<image class='share-image' src="images/share.png" mode="widthFix"></image>

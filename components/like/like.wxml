@@ -1,5 +1,0 @@
-<!--components/like/like.wxml-->
-<view class='like-container' bindtap='onLike' data-parameters="{{uniqueData}}">
-  <image src='{{likeUrl}}' mode="widthFix"></image>
-  <text class="like-num">{{uniqueData.fav_nums>0?uniqueData.fav_nums:''}}</text>
-</view> 
