@@ -1,1 +1,18 @@
-/* components/like/index.wxss */
+.like-container {
+  display: inline-flex;
+  padding:10rpx;
+}
+
+.like-container .img {
+  width: 32rpx;
+  height: 28rpx;
+}
+
+.like-container .count {
+  font-size: 24rpx;
+  color: #bbb;
+  line-height: 1;
+  position: relative;
+  bottom:10rpx;
+  left:6rpx;
+}
