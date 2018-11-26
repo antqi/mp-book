@@ -1,8 +1,24 @@
 <view class="classic-container">
-  <like
-    wx:if="{{classicData.content}}"
-    like="{{classicData.like_status?true:false}}"
-    count="{{classicData.fav_nums}}"
-  ></like>
-  <desc></desc>
+  <view class="top-bar">
+    <like
+      wx:if="{{classicData.content}}"
+      like="{{classicData.like_status}}"
+      count="{{classicData.fav_nums}}"
+    ></like>
+  </view>
+  <movie
+    wx:if="{{classicData.type===100}}"
+    img="{{classicData.image}}"
+    content="{{classicData.content}}"
+  ></movie>
+  <music
+    wx:if="{{classicData.type===200}}"
+    img="{{classicData.image}}"
+    content="{{classicData.content}}"
+  ></music>
+  <poetry
+    wx:if="{{classicData.type===300}}"
+    img="{{classicData.image}}"
+    content="{{classicData.content}}"
+  ></poetry>
 </view>

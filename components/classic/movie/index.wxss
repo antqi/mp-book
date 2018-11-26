@@ -1,0 +1,22 @@
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-bg {
+  width: 100%;
+}
+
+.img-type {
+  position: relative;
+  bottom: 59rpx;
+  right: 310rpx;
+  width: 46rpx;
+  height: 142rpx;
+}
+
+.content {
+  max-width: 550rpx;
+  font-size: 36rpx;
+}

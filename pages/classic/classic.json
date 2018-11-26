@@ -1,6 +1,8 @@
 {
   "usingComponents": {
     "like": "/components/like/index",
-    "desc": "/components/desc/index"
+    "movie": "/components/classic/movie/index",
+    "music": "/components/classic/music/index",
+    "poetry": "/components/classic/poetry/index"
   }
 }

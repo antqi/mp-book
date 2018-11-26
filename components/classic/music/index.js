@@ -1,4 +1,4 @@
-// components/desc/index.js
+// components/classic/music/index.js
 Component({
   /**
    * 组件的属性列表
