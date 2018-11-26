@@ -5,7 +5,9 @@
 }
 
 .img-bg {
-  width: 100%;
+  /* width: ; */
+  width: 750rpx;
+  height: 500rpx;
 }
 
 .img-type {

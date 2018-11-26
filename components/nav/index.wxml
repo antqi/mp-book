@@ -1,0 +1,5 @@
+<view class="nav-container">
+  <image class="img-prev" src="images/prev.png" />
+  <text class="title" >{{title}}</text>
+  <image class="img-next" src="images/next.png" />
+</view>

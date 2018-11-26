@@ -3,6 +3,7 @@
     "like": "/components/like/index",
     "movie": "/components/classic/movie/index",
     "music": "/components/classic/music/index",
-    "poetry": "/components/classic/poetry/index"
+    "poetry": "/components/classic/poetry/index",
+    "nav": "/components/nav/index"
   }
 }

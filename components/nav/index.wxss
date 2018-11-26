@@ -1,0 +1,19 @@
+.nav-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 600rpx;
+  height: 80rpx;
+  background-color: #f7f7f7;
+  border-radius: 2px;
+}
+
+.img-prev,
+.img-next {
+  width: 23rpx;
+  height: 34rpx;
+}
+
+.title {
+  font-size: 28rpx;
+}

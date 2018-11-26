@@ -21,4 +21,5 @@
     img="{{classicData.image}}"
     content="{{classicData.content}}"
   ></poetry>
+  <nav title="{{classicData.title}}"></nav>
 </view>
