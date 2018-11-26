@@ -4,8 +4,5 @@
     like="{{classicData.like_status?true:false}}"
     count="{{classicData.fav_nums}}"
   ></like>
-  <text
-    >{{ classicData.like_status
-    }}{{ classicData.like_status ? true : false }}</text
-  >
+  <desc></desc>
 </view>

@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "like": "/components/like/index"
+    "like": "/components/like/index",
+    "desc": "/components/desc/index"
   }
 }
