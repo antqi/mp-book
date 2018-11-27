@@ -5,7 +5,6 @@
 }
 
 .img-bg {
-  /* width: ; */
   width: 750rpx;
   height: 500rpx;
 }

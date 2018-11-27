@@ -1,2 +1,16 @@
-<!--pages/fav/fav.wxml-->
-<text>pages/fav/fav.wxml</text>
+<text> 用户信息 </text>
+<view>
+  <block> - open-data </block>
+  <open-data class="" type="userNickName" open-gid=""></open-data>
+</view>
+<view>
+  <block> - button </block>
+  <button bindgetuserinfo="getUserInfo" open-type="getUserInfo">用户</button>
+</view>
+<view>
+  <block> - wx.getUserInfo </block>
+  <button bind:tap="checkUserSetting">用户授权状态</button>
+</view>
+<view>
+  <block> - button-share </block> <button open-type="share">分享</button>
+</view>
