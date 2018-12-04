@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/fav/fav",
     "pages/classic/classic",
-    "pages/booklist/booklist"
+    "pages/booklist/booklist",
+    "pages/fav/fav"
   ],
   "window": {
     "navigationBarBackgroundColor": "#000",
@@ -12,16 +12,16 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/fav/fav",
-        "text": "喜欢",
-        "iconPath": "images/tab/my.png",
-        "selectedIconPath": "images/tab/my@highlight.png"
-      },
-      {
         "pagePath": "pages/classic/classic",
         "text": "流行",
         "iconPath": "images/tab/classic.png",
         "selectedIconPath": "images/tab/classic@highlight.png"
+      },
+      {
+        "pagePath": "pages/fav/fav",
+        "text": "喜欢",
+        "iconPath": "images/tab/my.png",
+        "selectedIconPath": "images/tab/my@highlight.png"
       },
       {
         "pagePath": "pages/booklist/booklist",

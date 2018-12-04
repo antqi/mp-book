@@ -14,3 +14,4 @@
 <view>
   <block> - button-share </block> <button open-type="share">分享</button>
 </view>
+<view> <block> - 二次 </block> <button bind:tap="share">分享</button> </view>

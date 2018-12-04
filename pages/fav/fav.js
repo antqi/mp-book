@@ -45,15 +45,15 @@ Page({
     })
   },
   share() {
-    // wx.getShareInfo({
-    //   shareTicket: ,
-    //   timeout:10000,
-    //   success: (result)=>{
-
-    //   },
-    //   fail: ()=>{},
-    //   complete: ()=>{}
-    // })
+    wx.showShareMenu({
+      withShareTicket: true,
+      success(res) {
+        console.log(res)
+      },
+      fail(err) {
+        console.log(111)
+      }
+    })
   },
   /**
    * 生命周期函数--监听页面加载
@@ -68,7 +68,9 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {},
+  onShow: function (res) {
+    console.log(res)
+  },
 
   /**
    * 生命周期函数--监听页面隐藏

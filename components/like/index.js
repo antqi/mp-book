@@ -18,19 +18,18 @@ Component({
    * 组件的初始数据
    */
   data: {
-    imgSrc: ''
-  },
-  ready() {
-    this.setData({
-      imgSrc: this.data.like ? 'images/like@active.png' : 'images/like.png'
-    })
+    likedSrc: 'images/like@active.png',
+    notLikedSrc: 'images/like.png'
   },
   /**
    * 组件的方法列表
    */
   methods: {
-    onLike: (event) => {
-      console.log(event)
+    onLike() {
+      this.setData({
+        count: this.data.like ? this.data.count - 1 : this.data.count + 1,
+        like: !this.data.like
+      })
     }
   }
 })
